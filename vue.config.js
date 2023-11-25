@@ -39,17 +39,9 @@ module.exports = {
     },
     //配置代理跨域
     proxy: {
-      '/dev-api': {
-        target: 'http://gmall-h5-api.atguigu.cn',
-        pathRewrite: { '^/dev-api': '' }
-      },
       '/prod-api':{
         target: 'http://gmall-h5-api.atguigu.cn',
         pathRewrite: { '^/prod-api': '' }
-      },
-      '/stage-api':{
-        target: 'http://gmall-h5-api.atguigu.cn',
-        pathRewrite: { '^/stage-api': '' }
       }
     },
     after: require('./mock/mock-server.js')
