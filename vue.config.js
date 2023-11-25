@@ -46,6 +46,10 @@ module.exports = {
       '/prod-api':{
         target: 'http://gmall-h5-api.atguigu.cn',
         pathRewrite: { '^/prod-api': '' }
+      },
+      '/stage-api':{
+        target: 'http://gmall-h5-api.atguigu.cn',
+        pathRewrite: { '^/stage-api': '' }
       }
     },
     after: require('./mock/mock-server.js')
