@@ -42,6 +42,9 @@ module.exports = {
       '/dev-api':{
         target: 'http://gmall-h5-api.atguigu.cn',
         pathRewrite: { '^/dev-api': '' }
+      },
+      'admin':{
+        target: 'http://gmall-h5-api.atguigu.cn',
       }
     },
     after: require('./mock/mock-server.js')
