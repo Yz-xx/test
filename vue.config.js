@@ -43,6 +43,10 @@ module.exports = {
         target: 'http://gmall-h5-api.atguigu.cn',
         pathRewrite: { '^/dev-api': '' }
       },
+      '/prod-api':{
+        target: 'http://gmall-h5-api.atguigu.cn',
+        pathRewrite: { '^/prod-api': '' }
+      },
       'admin':{
         target: 'http://gmall-h5-api.atguigu.cn',
       }
